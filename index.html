@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111a35" />
+    <meta name="description" content="موب أكسسوار — إكسسوارات موبايل مختارة وطلب مباشر على واتساب." />
+    <title>موب أكسسوار | إكسسوارات موبايل على مزاجك</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="announcement"><span class="spark">✦</span> شحن سريع داخل المدينة · اطلب مباشرة على واتساب <span class="announcement-number">01026964655</span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="العودة للرئيسية">
+        <span class="brand-mark"><span></span><i></i></span>
+        <span><strong>موب</strong> أكسسوار<small>كل حاجة لموبايلك</small></span>
+      </a>
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#home">الرئيسية</a>
+        <a href="#products">المنتجات</a>
+        <a href="#why-us">ليه موب؟</a>
+      </nav>
+      <button class="cart-button" id="cartButton" type="button" aria-label="فتح السلة">
+        <span class="cart-icon">🛒</span><span>السلة</span><b id="cartCount">0</b>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> اكسسوار صغير، فرق كبير</div>
+          <h1>خلّي موبايلك<br /><em>على مزاجك.</em></h1>
+          <p>اختيارات عملية وشكلها حلو، من الكفر اللي يحميه للشاحن اللي يلحق يومك. اختار، ابعت لنا على واتساب، وخلاص.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#products">شوف المنتجات <span>←</span></a>
+            <a class="button button-ghost" href="https://wa.me/201026964655" target="_blank" rel="noreferrer">كلّمنا واتساب <span class="wa-mini">◉</span></a>
+          </div>
+          <div class="hero-note"><span class="avatars"><i>م</i><i>و</i><i>ب</i></span><span><strong>اختيارات ناس كتير</strong><br />بنجهز طلبك على السريع</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-grid"></div>
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="feature-product">
+            <div class="feature-tag">اختيار الأسبوع <span>✦</span></div>
+            <img src="/manus-storage/async-images/FUooflutV7NAmaIMxo5ubU/image-3.webp" alt="سماعات لاسلكية داخل علبة الشحن" />
+            <div class="feature-info"><span>سماعات لاسلكية Mini</span><strong>599 <small>ج.م</small></strong></div>
+          </div>
+          <div class="floating-chip chip-one">⚡ شحن سريع</div>
+          <div class="floating-chip chip-two">✓ خامات مضمونة</div>
+          <span class="hero-dot dot-one"></span><span class="hero-dot dot-two"></span><span class="hero-dot dot-three"></span>
+        </div>
+      </section>
+
+      <section class="category-strip wrap" aria-label="تصنيفات المنتجات">
+        <div class="section-kicker">اختار مزاجك</div>
+        <div class="category-list" id="categoryList"></div>
+        <button class="text-link" id="clearCategory" type="button">كل المنتجات <span>←</span></button>
+      </section>
+
+      <section class="products-section wrap" id="products">
+        <div class="section-heading">
+          <div><span class="section-kicker">مختاراتنا</span><h2>حاجات تستاهل تبقى معاك</h2></div>
+          <p>منتجات أساسية، شكلها رايق وسعرها على قدّها.</p>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="why-section wrap" id="why-us">
+        <div class="why-intro"><span class="section-kicker">ليه تختارنا؟</span><h2>أبسط تجربة<br /><span>لأحلى اكسسوار.</span></h2><p>مش بنبيع أي حاجة وخلاص. بنختار حاجات نستخدمها إحنا كمان، ونخلي طلبها أسهل من رسالة.</p></div>
+        <div class="why-cards">
+          <article><span class="why-icon orange">⚡</span><h3>اختيارات ذكية</h3><p>منتجات عملية ومختارة عشان تعيش معاك، مش منظر بس.</p></article>
+          <article><span class="why-icon green">◉</span><h3>طلب على واتساب</h3><p>من غير حسابات ولا خطوات كتير. ابعت طلبك وخليك مطمّن.</p></article>
+          <article><span class="why-icon navy">↗</span><h3>بنرد بسرعة</h3><p>فريقنا جاهز يجاوبك ويساعدك تختار الأنسب لموبايلك.</p></article>
+        </div>
+      </section>
+
+      <section class="cta-strip wrap"><div><span class="section-kicker">جاهز تزودها؟</span><h2>موبايلك يستاهل لمسة جديدة.</h2></div><a class="button button-dark" href="#products">ابدأ الاختيار <span>←</span></a></section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-brand"><span class="brand-mark small"><span></span><i></i></span><span><strong>موب</strong> أكسسوار</span></div><p>إكسسوارات موبايل مختارة بعناية · طلب مباشر وبسيط</p><a href="https://wa.me/201026964655" target="_blank" rel="noreferrer">01026964655</a></footer>
+
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true">
+      <div class="drawer-header"><div><span class="section-kicker">طلبك</span><h2>السلة <span id="drawerCount">0</span></h2></div><button class="close-button" id="closeCart" type="button" aria-label="إغلاق السلة">×</button></div>
+      <div class="cart-content" id="cartContent"></div>
+      <div class="checkout-area" id="checkoutArea">
+        <div class="total-row"><span>الإجمالي</span><strong id="cartTotal">0 <small>ج.م</small></strong></div>
+        <form id="checkoutForm">
+          <label>الاسم<input required name="name" placeholder="اكتب اسمك" /></label>
+          <label>رقم الموبايل<input required name="phone" inputmode="tel" placeholder="01xxxxxxxxx" /></label>
+          <label>العنوان أو ملاحظات<textarea name="notes" rows="2" placeholder="المنطقة، اللون، أو أي ملاحظة"></textarea></label>
+          <button class="button button-whatsapp" type="submit"><span>◉</span> اطلب على واتساب</button>
+          <small class="form-hint">هتنتقل لواتساب برسالة جاهزة لمراجعة الطلب.</small>
+        </form>
+      </div>
+    </aside>
+
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <section class="product-modal" id="productModal" aria-hidden="true" aria-label="تفاصيل المنتج">
+      <button class="close-button modal-close" id="closeModal" type="button" aria-label="إغلاق">×</button>
+      <div id="modalBody"></div>
+    </section>
+    <div class="toast" id="toast" role="status"></div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
