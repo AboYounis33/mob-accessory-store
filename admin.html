@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إدارة المتجر | موب أكسسوار</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/admin.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="login-card" id="loginView"><div class="admin-logo"><span>م</span><div><b>موب أكسسوار</b><small>لوحة الإدارة</small></div></div><h1>أهلًا بيك</h1><p>سجّل دخولك لإدارة المنتجات وإعدادات المتجر.</p><form id="loginForm"><label>البريد الإلكتروني<input name="email" type="email" required placeholder="you@example.com" /></label><label>كلمة المرور<input name="password" type="password" required placeholder="••••••••" /></label><button class="primary-button" type="submit">دخول للوحة <span>←</span></button><small id="loginMessage"></small></form></section>
+      <section class="dashboard is-hidden" id="dashboardView">
+        <header class="admin-topbar"><div class="admin-logo"><span>م</span><div><b>موب أكسسوار</b><small>لوحة الإدارة</small></div></div><div class="top-actions"><a href="/" target="_blank">فتح المتجر ↗</a><button id="logoutButton" type="button">تسجيل الخروج</button></div></header>
+        <div class="dashboard-heading"><div><span class="eyebrow">مساحتك الخاصة</span><h1>إدارة المتجر</h1><p>عدّل كل حاجة وخلي متجرك دايمًا على مزاجك.</p></div><span class="live-pill"><i></i> متصل بالسحابة</span></div>
+        <div class="admin-grid">
+          <section class="panel settings-panel"><div class="panel-heading"><div><span class="panel-kicker">الهوية والتواصل</span><h2>إعدادات المتجر</h2></div><span>01</span></div><form id="settingsForm" class="form-grid"><label>اسم المتجر<input name="store_name" required /></label><label>الجملة التعريفية<input name="tagline" /></label><label>رقم واتساب<input name="display_phone" required /></label><label>الرابط الدولي لواتساب<input name="whatsapp" required placeholder="2010xxxxxxxx" /></label><label class="full">رابط الشعار<input name="logo_url" placeholder="https://..." /></label><button class="primary-button full" type="submit">حفظ إعدادات المتجر <span>✓</span></button><small class="form-status full" id="settingsStatus"></small></form></section>
+          <section class="panel product-panel"><div class="panel-heading"><div><span class="panel-kicker">الكتالوج</span><h2>المنتجات</h2></div><button class="secondary-button" id="newProductButton" type="button">+ منتج جديد</button></div><div id="productsList" class="products-list"><div class="loading">بنحمّل المنتجات…</div></div></section>
+        </div>
+        <section class="panel product-editor is-hidden" id="productEditor"><div class="panel-heading"><div><span class="panel-kicker">تعديل الكتالوج</span><h2 id="editorTitle">إضافة منتج جديد</h2></div><button class="close-editor" id="cancelEditor" type="button">×</button></div><form id="productForm" class="form-grid"><input type="hidden" name="id" /><label>اسم المنتج<input name="name" required /></label><label>اسم مختصر<input name="short_name" /></label><label>القسم<input name="category" required placeholder="كفرات، شواحن…" /></label><label>السعر<input name="price" required type="number" min="0" step="1" /></label><label>السعر القديم<input name="old_price" type="number" min="0" step="1" /></label><label>اللون<input name="color" /></label><label class="full">رابط صورة المنتج<input name="image_url" placeholder="https://... أو /manus-storage/..." /></label><label class="full">الوصف<textarea name="description" rows="3"></textarea></label><label class="check"><input type="checkbox" name="is_active" checked /> ظاهر في المتجر</label><label class="check"><input type="checkbox" name="is_featured" /> منتج مميز</label><div class="editor-actions full"><button class="primary-button" type="submit">حفظ المنتج <span>✓</span></button><button class="text-button" id="deleteProductButton" type="button">حذف المنتج</button><small class="form-status" id="productStatus"></small></div></form></section>
+      </section>
+    </main>
+    <div class="toast" id="toast"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script type="module" src="/src/admin.js"></script>
+  </body>
+</html>
