@@ -1,0 +1,42 @@
+/* Additions: no-image placeholders, empty/loading states */
+.is-hidden { display: none !important; }
+
+.img-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  font-size: 2.2rem;
+  color: #9aa4c4;
+  background: linear-gradient(135deg, #eef1fb, #dfe5f7);
+}
+.cart-item .img-placeholder {
+  width: 64px;
+  height: 64px;
+  aspect-ratio: auto;
+  flex: none;
+  border-radius: 12px;
+  font-size: 1.4rem;
+}
+.modal-image .img-placeholder {
+  min-height: 260px;
+  border-radius: 16px;
+}
+
+.grid-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 16px;
+  color: #6b7491;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.feature-art {
+  display: grid;
+  place-items: center;
+  min-height: 240px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #eef1fb, #dfe5f7);
+}
+.feature-art .brand-mark { transform: scale(2.4); }
